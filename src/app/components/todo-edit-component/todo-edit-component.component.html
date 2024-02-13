@@ -1,0 +1,10 @@
+<div *ngIf="editEnabled" class="todo-edit-form">
+    <div>
+        <button type="button" (click)="editEnableFunc()" >X</button>
+    </div>
+    <div>
+        <label for="update-todo">Update Todo:</label>
+        <input type="text" [(ngModel)]="updateValue" />
+        <button type="button">UPDATE</button>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="todo-form">
+
+    <label for="addtodo">ADD TODO:</label>
+    <input name="addtodo" placeholder="Enter a Todo..." [(ngModel)]="newTodoTitle" type="text" required />
+
+    <button type="submit" (click)="addTodo()">ADD TODO</button>
+</div>
+<div class="todo-list">
+    <app-todo-table [todos]="todos"></app-todo-table>
+</div>
